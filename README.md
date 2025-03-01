@@ -29,6 +29,6 @@ source ~/ros2_ws/install/setup.bash
 </details>
 
 ``` r
-ros2 launch del_jrs launch_example1.launch.py
+ros2 launch del_jrs del_jrs.launch.py
 ```
 

@@ -16,14 +16,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='todo',
-    maintainer_email='todo@todo.com',
-    description='TODO: Package description',
+    maintainer='Deli Laszlo',
+    maintainer_email='deli.laszlo.viktor@hallgato.sze.hu',
+    description='AJR Kis feleves beadando turtlesim package',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = del_jrs.control_vehicle:main',
+            'cmd_gen_node = del_jrs.cmd_gen_node:main',
         ],
     },
 )

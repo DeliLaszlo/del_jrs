@@ -3,8 +3,8 @@
 <package format="3">
   <name>del_jrs</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="todo@todo.com">he</maintainer>
+  <description>AJR Kis feleves beadando turtlesim package</description>
+  <maintainer email="deli.laszlo.viktor@hallgato.sze.hu">he</maintainer>
   <license>GNU General Public License v3.0</license>
 
   <test_depend>ament_copyright</test_depend>
