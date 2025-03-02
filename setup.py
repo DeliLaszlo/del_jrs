@@ -18,7 +18,7 @@ setup(
     zip_safe=True,
     maintainer='Deli Laszlo',
     maintainer_email='deli.laszlo.viktor@hallgato.sze.hu',
-    description='AJR Kis feleves beadando turtlesim package',
+    description='AJR Kis feleves beadando turtlesim pine tree drawing package',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={

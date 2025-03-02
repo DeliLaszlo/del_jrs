@@ -15,16 +15,94 @@ class CmdGen(Node):
 
     def loop(self):
         cmd_msg = Twist()
-        if self.loop_count < 20:
-            cmd_msg.linear.x = 1.0
+    
+        if self.loop_count < 5:
+            cmd_msg.linear.y = 1.0  
+            cmd_msg.angular.z = 0.0 
+        elif self.loop_count < 15:
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 1.57
+        elif self.loop_count < 20: 
+            cmd_msg.linear.x = 1.3  
             cmd_msg.angular.z = 0.0
-        else:
-            cmd_msg.linear.x = -1.0
-            cmd_msg.angular.z = 1.0
+        elif self.loop_count < 30:
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.95  
+        elif self.loop_count < 35: 
+            cmd_msg.linear.y = 1.5  
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 45:  
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 1.95
+        elif self.loop_count < 50:  
+            cmd_msg.linear.x = 0.9  
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 60: 
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.95
+        elif self.loop_count < 65: 
+            cmd_msg.linear.y = 1.2
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 75: 
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 1.95
+        elif self.loop_count < 80: 
+            cmd_msg.linear.x = 0.6
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 90: 
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.95
+        elif self.loop_count < 98: 
+            cmd_msg.linear.y = 1.2
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 108: 
+            cmd_msg.linear.x = 1.0
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 118: 
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.98
+        elif self.loop_count < 123: 
+            cmd_msg.linear.y = 0.6
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 133: 
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 1.98
+        elif self.loop_count < 138: 
+            cmd_msg.linear.x = 1.25
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 148: 
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.98
+        elif self.loop_count < 153: 
+            cmd_msg.linear.y = 0.9
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 163: 
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 1.98
+        elif self.loop_count < 171: 
+            cmd_msg.linear.x = 1.05
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 181: 
+            cmd_msg.linear.x = 0.0
+            cmd_msg.angular.z = -1.98
+        elif self.loop_count < 186: 
+            cmd_msg.linear.y = 1.35
+            cmd_msg.angular.z = 0.0
+        elif self.loop_count < 191: 
+            cmd_msg.linear.y = 0.0
+            cmd_msg.linear.x = -0.9725
+        elif self.loop_count < 196:
+            cmd_msg.linear.x = 0.0
+            cmd_msg.linear.y = 1.1
+        elif self.loop_count < 206:
+            cmd_msg.linear.y = 0.0
+            cmd_msg.angular.z = 2.36
         self.cmd_pub.publish(cmd_msg)
         self.loop_count += 1
-        if self.loop_count > 40:
+        if self.loop_count > 206:
             self.loop_count = 0
+
 
 def main(args=None):
     rclpy.init(args=args)

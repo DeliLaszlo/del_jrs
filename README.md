@@ -1,5 +1,5 @@
 # `del_jrs` package
-ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+ROS 2 Humble python turlesim package that draws a pine tree.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.

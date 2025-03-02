@@ -3,7 +3,7 @@
 <package format="3">
   <name>del_jrs</name>
   <version>0.0.0</version>
-  <description>AJR Kis feleves beadando turtlesim package</description>
+  <description>AJR Kis feleves beadando turtlesim pine tree drawing package</description>
   <maintainer email="deli.laszlo.viktor@hallgato.sze.hu">he</maintainer>
   <license>GNU General Public License v3.0</license>
 
